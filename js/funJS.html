@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ ///annoumnus function
+        a funtion which do not have any name or identity
+        let msg=funtion(){
+            console.log("hello advance js");
+        };
+        msg();
+        // share code for above funtion ie arrow function
+        let msg=()=>console.log("hello function ass an arrow");
+        msgl();
+        // arrow function using multi line 
+        let add=(a,b)=>{
+            console.log("first number is"+a);
+            console.log("second number is"+b);
+            console.log("addition of two number is"+(a+b));
+        }
+        add(4,5);
+
+        //IIFE an immidiately invoked function expression 
+        //IIFE is an java script function that runs as soon as it is defined
+        (funtion())(){
+          console.log(IIFE is js");
+        }();
+        //IIFE using arrow
+        (()=>console.log("IIFE using arrow"))();
+
+
+        /// call back funtion: 
+        /// call back funtion 
+
+        function  mul(call back){
+            var num1=10;
+            console.log("first value is "+ num1)
+            var num2=20
+            console.log("second value is"+ num2);
+            var res=num1*num2;
+            call back(res);
+        }
+        funtion result(res){
+            console.log("multiplication is "+ res );
+
+        }
+
+        mul(result);
+
+
+        // call back funtion using settime out
+        function msg(){
+         console.log("hello call back");
+         documnet.writeln("hello")
+
+        }
+        function loading(){
+            document.writeln("loading ........")
+        };
+        settimeout(msg2,2000);
+        loading();
+        
+        //// map filter and reduce 
+
+        let num =[3,4,5,7];
+        let finaleresult=map.num(n=>n*2)
+
+
+
+        // filter method
+
+        let finaleresult1=num.filter(n=>(n>3))
+        console.log(finale result2);
+
+       
+
+
+
+
+
+
+
+        //reduce call back
+        let finaleresult2=num.reduce((total,n)=>total+n);
+        console.log(finaleresult2);
+
+
+        //promises: an object representing the eventual completion or failure of an asynchronous operation
+        // promises stages 
+         Pending: The initial state. The operation is still in progress, and the promise is neither fulfilled nor rejected.
+        Fulfilled: The operation completed successfully, and a resulting value is available. This state is sometimes referred to as "resolved".
+         Rejected: The operation failed, and a reason (error) is available
+        
+         let promise=new promise(function(resolve,reject)){
+            if(age=>18){
+                resolve("valid age");
+            }
+            else{
+                reject("waite for next year");
+            }
+        }};
+        promise.then(result=>console.log(reslult));
+        .catch(error=>console.log(error));
+        finally(msg=>console.log("done"));
+
+         
+        
+    </script>
+</body>
+</html>
